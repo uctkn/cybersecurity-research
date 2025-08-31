@@ -82,10 +82,10 @@ prop_df %>%
 
 # 10. Boxplots
 p1 <-ggplot(prop_df, aes(x = Alignment, y = threat_total, fill = Alignment)) +
-  geom_boxplot() + labs(title = "")
+  geom_boxplot() + labs(title = "", y = "Proportion of Threat Language")
 
 p2 <- ggplot(prop_df, aes(x = Alignment, y = risk_total, fill = Alignment)) +
-  geom_boxplot() + labs(title = "")
+  geom_boxplot() + labs(title = "", y = "Proportion of Risk Language")
 
 p1
 p2
